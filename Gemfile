@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails',                '4.2.0.beta4'
 gem 'bootstrap-sass',       '3.2.0.0'
 
-
+gem 'sass', '3.2.13'
 gem 'mail_form', '~> 1.5.0.rc'
 gem 'simple_form', '~> 3.0.0.rc'
 
