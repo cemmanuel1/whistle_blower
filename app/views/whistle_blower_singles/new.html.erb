@@ -11,9 +11,8 @@
           department. Thank You.</p>
       </div>
       <div class="col-sm-12">
-        <p>Description:</p>
         <%= simple_form_for @whistle_blower_single, :html => {:class => 'form-horizontal'} do |f| %>
-          <%= f.input :message, :as => :text, :required => true, :input_html => {rows: 5, class: "form-control"}, label: false %>
+          <%= f.input :message, :as => :text, :required => true, :input_html => {rows: 5, class: "form-control"}, label: "Description:" %>
           <div class="hidden">
             <%= f.input :nickname, :hint => 'Leave this field blank!' %>
           </div>

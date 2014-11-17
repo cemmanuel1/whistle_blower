@@ -13,6 +13,7 @@
           Human Resource department. Thank You.</p>
       </div>
       <div class="col-sm-12">
+
         <%= simple_form_for @whistle_blower_multi, :html => {:class => 'form-horizontal'} do |f| %>
           <%= f.input :question_1, :as => :text, :required => false, :input_html => {rows: 3, class: "form-control"}, label: "What act occurred and how do you believe it was fraudulent, illegal, or improper? (Please include as much
 
@@ -24,7 +25,7 @@ detail as possible to enable a thorough investigation of the matter.):" %>
 
 etc?):" %>
           <%= f.input :question_4, :as => :text, :required => false, :input_html => {rows: 3, class: "form-control"}, label: "Are there any witnesses who can confirm the misconduct?:" %>
-          <%= f.input :check_box, :as => :boolean, label:false, :required => true, inline_label: "By checking this box, I certify that the information in this complaint is true and correct to the best of my
+          <%= f.input :check_box, :as => :boolean, label:false, :required => false, inline_label: "By checking this box, I certify that the information in this complaint is true and correct to the best of my
 
 knowledge and belief." %>
           <div class="hidden">
