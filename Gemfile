@@ -20,6 +20,7 @@ group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
+  gem 'letter_opener'
 end
 
 group :production do

@@ -1,0 +1,27 @@
+<div class="contentDiv">
+  <div class="container">
+    <div class="row content-utilities" id="whistle_blower_form">
+      <div class="col-sm-12 text-center">
+        <h3>Central Park Conservancy Whistleblower Submission</h3>
+
+        <p>This form was created with the express purpose of allowing anonymous reporting of problems, issues or
+          misconduct by Central Park Conservancy staff and related workers. Please type the description of the event
+          below with as much detail as possible. This website does not track any location or account information. The
+          form will be submitted using an anonymous e-mail account and be sent directly to the Human Resource
+          department. Thank You.</p>
+      </div>
+      <div class="col-sm-12">
+        <p>Description:</p>
+        <%= simple_form_for @whistle_blower_single, :html => {:class => 'form-horizontal'} do |f| %>
+          <%= f.input :message, :as => :text, :required => true, :input_html => {rows: 5, class: "form-control"}, label: false %>
+          <div class="hidden">
+            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+          </div>
+          <div class="form-actions">
+            <%= f.button :submit, 'Send', :class => "Button" %>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
