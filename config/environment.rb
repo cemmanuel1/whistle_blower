@@ -5,9 +5,9 @@ require File.expand_path('../application', __FILE__)
 Wb::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'your_sendgrid_username',
-  :password => 'your_sendgrid_password',
-  :domain => 'yourdomain.com',
+  :user_name => 'jehrlich',
+  :password => 'Ars3n@l2014',
+  :domain => 'http://www.centralparknyc.org',
   :address => 'smtp.sendgrid.net',
   :port => 587,
   :authentication => :plain,
