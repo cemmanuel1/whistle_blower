@@ -15,3 +15,5 @@
 /log/*.log
 /tmp
 /config/initializers/app_env_vars.rb
+.idea/
+.DS_Store
