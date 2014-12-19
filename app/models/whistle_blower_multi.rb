@@ -5,8 +5,7 @@ class WhistleBlowerMulti < MailForm::Base
   def headers
     {
       :subject => "New Message",
-      # :to => "whistleblower@centralparknyc.org",
-      :to => "cemmanuel1@gmail.com",
+      :to => "whistleblower@centralparknyc.org",
       :from => "sender@example.com"
     }
   end
