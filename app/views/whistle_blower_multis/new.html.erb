@@ -8,15 +8,15 @@
           or other misconduct by Central Park Conservancy staff, administration or volunteers.</p>
 
         <p style="text-align: left">This website does not track your location or account information, and will be submitted using an anonymous
-          e-mail account. The information reported will be sent directly to the Human Resource Department.</p>
+          e-mail account. The information reported will be sent directly to the Human Resources Department.</p>
       </div>
       <div class="col-sm-12">
 
         <%= simple_form_for @whistle_blower_multi, :html => {:class => 'form-horizontal'} do |f| %>
-          <%= f.input :question_1, :as => :text, :required => false, :input_html => {rows: 3, class: "form-control"}, label: "Describe the alleged misconducts, and why you believe it was fraudulent, illegal, or improper? (Please include as much detail as possible to enable a thorough investigation of the matter.):"%>
+          <%= f.input :question_1, :as => :text, :required => false, :input_html => {rows: 3, class: "form-control"}, label: "Describe the alleged misconduct, and why you believe it was fraudulent, illegal, or improper. (Please include as much detail as possible to enable a thorough investigation of the matter):"%>
           <%= f.input :question_2, :as => :text, :required => false, :input_html => {rows: 3, class: "form-control"}, label: "When and where did the alleged misconduct occur? (If relevant, please indicate if the acts were committed over a specific period of time):" %>
-          <%= f.input :question_3, :as => :text, :required => false, :input_html => {rows: 3, class: "form-control"}, label: "What do you believe enabled the act(s) to occur? (ie; a lack of controls, circumvention of controls, or collusion, etc?):" %>
-          <%= f.input :question_4, :as => :text, :required => false, :input_html => {rows: 3, class: "form-control"}, label: "Are there any witnesses who can confirm the alleged misconduct?:" %>
+          <%= f.input :question_3, :as => :text, :required => false, :input_html => {rows: 3, class: "form-control"}, label: "What do you believe enabled the act(s) to occur? (i.e. a lack of internal controls, circumvention of internal controls, collusion, etc.):" %>
+          <%= f.input :question_4, :as => :text, :required => false, :input_html => {rows: 3, class: "form-control"}, label: "Use the space below to identify any witnesses who can confirm the alleged misconduct.:" %>
           <%= f.input :check_box, :as => :boolean, label: false, :required => false, inline_label: "By checking this box, I certify that the information in this report is true and correct to the best of my knowledge and belief." %>
           <div class="hidden">
             <%= f.input :nickname, :hint => 'Leave this field blank!' %>
